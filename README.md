@@ -25,5 +25,7 @@ Reference:
 
 Example:
 
+<code>
 local mysrv = zbxapi.create("http://10.10.10.10/", "woot", "myneetpassword")
 local results = mysrv:Request("host.get", {hostids = {11451}})
+</code>
