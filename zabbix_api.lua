@@ -67,7 +67,7 @@ function method:GetAuthToken()
 			user = self.user;
 			password = self.password;
 		};
-		id = id or "user.login-" .. tostring(math.random(1,1000)) .. tostring(os.time());
+		id = "user.login-" .. tostring(math.random(1,1000)) .. tostring(os.time());
 	}
 	
 	local payload = json.encode(ptbl)
