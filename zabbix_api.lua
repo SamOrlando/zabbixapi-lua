@@ -140,8 +140,8 @@ function method:Request(method, params, id)
 			["Content-Type"] = "application/json-rpc";
 			["Content-Length"] = payload:len();
 		};
-    source = ltn12.source.string(payload);
-    sink = ltn12.sink.table(response_body);
+    		source = ltn12.source.string(payload);
+    		sink = ltn12.sink.table(response_body);
 	}
 
 	-- fixme and perhaps share error handling with common routine between auth and request.
