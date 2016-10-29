@@ -80,8 +80,8 @@ function method:GetAuthToken()
 			["Content-Type"] = "application/json-rpc";
 			["Content-Length"] = payload:len();
 		};
-    source = ltn12.source.string(payload);
-    sink = ltn12.sink.table(response_body);
+    		source = ltn12.source.string(payload);
+    		sink = ltn12.sink.table(response_body);
 	}
 	
 	-- fix me for timeout and retry option
